@@ -53,5 +53,15 @@ echo "\n";
 // echo "cek null pada variable yang tidak di deklarasi :";
 // echo is_null($tidakada);
 
+echo "\n---menghapus variable---\n";
+$remove = "ini bakal dihapus";
+
+echo $remove;
+// unset($remove);
+// note varible yang di hapus tidak dapat di panggil jika di paksa akan terjadi error
+// echo $remove;
+
+
+
 
 ?>
