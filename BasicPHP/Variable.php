@@ -48,7 +48,7 @@ echo 'cek variable $data_null null :';
 echo is_null($data_null);
 echo "\n";
 echo 'cek variable $contoh null :';
-echo var_dump(is_null($contoh));
+var_dump(is_null($contoh));
 echo "\n";
 // echo "cek null pada variable yang tidak di deklarasi :";
 // echo is_null($tidakada);
@@ -62,14 +62,14 @@ unset($remove);
 // echo $remove;
 
 echo 'cek apakah variable $remove ada atau tidak : ';
-echo var_dump(isset($remove));
+var_dump(isset($remove));
 // note : 
 echo "\n";
 echo 'cek variable $data_null bernilai null atau tidak: ';
-echo var_dump(isset($data_null));
+var_dump(isset($data_null));
 echo "\n";
 echo 'cek variable $contoh bernilai null atau tidak: ';
-echo var_dump(isset($contoh));
+var_dump(isset($contoh));
 
 
 ?>
