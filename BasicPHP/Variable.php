@@ -6,7 +6,7 @@ $name = "selo";
 $age = 25;
 
 echo "name :";
-echo $name;
+echo "hello".$name;
 echo "\n";
 
 echo "age :";
@@ -57,11 +57,19 @@ echo "\n---menghapus variable---\n";
 $remove = "ini bakal dihapus";
 
 echo $remove;
-// unset($remove);
-// note varible yang di hapus tidak dapat di panggil jika di paksa akan terjadi error
+unset($remove);
+// note : varible yang di hapus tidak dapat di panggil jika di paksa akan terjadi error
 // echo $remove;
 
-
+echo 'cek apakah variable $remove ada atau tidak : ';
+echo var_dump(isset($remove));
+// note : 
+echo "\n";
+echo 'cek variable $data_null bernilai null atau tidak: ';
+echo var_dump(isset($data_null));
+echo "\n";
+echo 'cek variable $contoh bernilai null atau tidak: ';
+echo var_dump(isset($contoh));
 
 
 ?>
