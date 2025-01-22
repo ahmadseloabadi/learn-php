@@ -23,6 +23,17 @@ echo $country;
 echo "\nvariables:";
 echo $ind;
 
+echo "\n constant variable";
+// variable imutable pada php hanya dapat dideklarasi sekali saja
+
+define("AUTHOR","ahmad selo abadi");
+define("PROGRESS",10);
+
+echo "AUTHOR :";
+echo AUTHOR;
+echo "\n";
+echo "progress :";
+echo PROGRESS;
 
 
 ?>
