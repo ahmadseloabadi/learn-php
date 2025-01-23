@@ -137,6 +137,76 @@ echo "implementasi :".$x--; // Output: 5 (nilai $x dicetak dulu. baru dikurangi 
 echo "\n";
 echo "result :".$x;   // Output: 4 (nilai $x sekarang sudah menjadi 4)
 
+echo "\n\n---Operator array---\n\n";
+
+echo "\n---Union (+)---\n"; 
+// Operator union digunakan untuk menggabungkan dua array. Jika ada elemen dengan kunci yang sama, array pertama akan mempertahankan nilainya.
+$array1 = ["a" => "Apple", "b" => "Banana"];
+$array2 = ["b" => "Berry", "c" => "Cherry"];
+
+$result = $array1 + $array2;
+var_dump($result);
+
+echo "\n---Equality (==)---\n"; 
+// Operator equality digunakan untuk membandingkan dua array berdasarkan kunci dan nilai tanpa memeriksa urutan.
+$array1 = ["a" => "Apple", "b" => "Banana"];
+$array2 = ["b" => "Banana", "a" => "Apple"];
+
+var_dump($array1 == $array2);
+
+echo "\n---Identity (===)---\n"; 
+// Operator identity digunakan untuk membandingkan dua array berdasarkan kunci, nilai, dan urutan elemen.
+$array1 = ["a" => "Apple", "b" => "Banana"];
+$array2 = ["b" => "Banana", "a" => "Apple"];
+
+var_dump($array1 === $array2);
+
+echo "\n--- Inequality (!= atau <>)---\n"; 
+// Operator inequality digunakan untuk memeriksa apakah dua array tidak sama (berdasarkan kunci dan nilai tanpa memeriksa urutan).
+$array1 = ["a" => "Apple", "b" => "Banana"];
+$array2 = ["b" => "Berry", "a" => "Apple"];
+
+var_dump($array1 != $array2);
+
+echo "\n--- Non-Identity (!==)---\n"; 
+// Operator non-identity digunakan untuk memeriksa apakah dua array tidak identik (berdasarkan kunci, nilai, dan urutan elemen).
+$array1 = ["a" => "Apple", "b" => "Banana"];
+$array2 = ["b" => "Banana", "a" => "Apple"];
+
+var_dump($array1 !== $array2);
+
+
+echo "\n--- contoh lengkap operator array---\n"; 
+$array1 = ["a" => "Apple", "b" => "Banana"];
+$array2 = ["b" => "Berry", "c" => "Cherry"];
+
+// Union
+$union = $array1 + $array2;
+echo "Union:\n";
+var_dump($union);
+
+// Equality
+$equality = $array1 == $array2;
+echo "Equality:\n";
+var_dump($equality);
+
+// Identity
+$identity = $array1 === $array2;
+echo "Identity:\n";
+var_dump($identity);
+
+// Inequality
+$inequality = $array1 != $array2;
+echo "Inequality:\n";
+var_dump($inequality);
+
+// Non-Identity
+$nonIdentity = $array1 !== $array2;
+echo "Non-Identity:\n";
+var_dump($nonIdentity);
+
+
+
 
 
 ?>
