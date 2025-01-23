@@ -29,7 +29,56 @@ print_r($array2);
 echo "\nmenampilkan total data pada array : ";
 echo count($array2);
 
+echo "\n----array sebagai map----\n";
 
+$selo = array(
+    "id" =>"selo",
+    "name" => "selo",
+    "city" => "lampung",
+    "age" => 25,
+);
 
+$suep = [
+    "id" =>"suep",
+    "name" => "suep",
+    "age" => 20,
+];
+
+echo "inisialisasi array sebagai map  :\n";
+var_dump($selo);
+echo "inisialisasi array sebagai map dengan kurung siku :\n";
+var_dump($suep);
+
+echo "akses nilai pada array dengan key value city:";
+var_dump($selo["city"]);
+
+echo "\n----array dalam array----\n";
+
+$selo = array(
+    "id" =>"selo",
+    "name" => "selo",
+    "address" => array(
+        "city" =>"lampung",
+        "country" =>"indonesia",
+    ),
+    "age" => 25,
+);
+
+$suep = [
+    "id" =>"suep",
+    "name" => "suep",
+    "address" => [
+        "city" =>"semarang",
+        "country" =>"indonesia",
+    ],
+    "age" => 20,
+];
+echo "inisialisasi array salam array  :\n";
+var_dump($selo);
+echo "inisialisasi array salam array dengan kurung siku :\n";
+var_dump($suep);
+
+echo "akses nilai pada array dengan key value country pada array yg ada didalam array:";
+var_dump($selo["address"]["country"]);
 
 ?>
