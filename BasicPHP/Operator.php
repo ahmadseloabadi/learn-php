@@ -93,7 +93,24 @@ if ($result == -1) {
 
 echo "\n\n---Operator logika---\n\n";
 
+echo "\n---Operator AND (&& atau and)---\n";//Mengembalikan true jika kedua operand bernilai true.
 
+var_dump(true && true);  // true
+var_dump(true && false); // false
+var_dump(false && false); // false
 
+echo "\n---Operator OR (|| atau or)---\n"; //Mengembalikan true jika salah satu operand bernilai true.
+var_dump(true || false);  // true
+var_dump(false || false); // false
+var_dump(true || true);   // true
+
+echo "\n---Operator NOT (!)---\n"; //Membalikkan nilai boolean.
+var_dump(!true);  // false
+var_dump(!false); // true
+
+echo "\n---Operator XOR---\n"; //Mengembalikan true jika salah satu operand bernilai true, tetapi tidak keduanya.
+var_dump(true xor false);  // true
+var_dump(true xor true);   // false
+var_dump(false xor false); // false
 
 ?>
