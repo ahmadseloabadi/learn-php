@@ -2,7 +2,7 @@
 
 $a = 10;
 $b = 3;
-echo "\n---operator aritmatika---\n";
+echo "\n\n---operator aritmatika---\n\n";
 echo "initialisasi nilai a : ".$a .", nilai b : ".$b;
 echo "\npenjumlahan :".$a+$b;
 echo "\npengurangan :".$a-$b;
@@ -11,7 +11,7 @@ echo "\npembagian :".$a/$b;
 echo "\nmod :".$a%$b;
 echo "\npangkat :".$a**$b;
 
-echo "\n---operator penugasan aritmatika---\n";
+echo "\n\n---operator penugasan aritmatika---\n\n";
 $total = 0;
 echo "initialisasi nilai total : ".$total.", nilai b : ".$a;
 echo "\npenugasan penjumlahan :".$total+=$a;
@@ -20,7 +20,7 @@ echo "\npenugasan pengurangan :".$total-=$a;
 echo "\npenugasan pembagian :".$total/=$a;
 echo "\npenugasan mod :".$total%=$a;
 
-echo "\n---operator perbandingan---\n";
+echo "\n\n---operator perbandingan---\n\n";
 
 $a = 10;
 $b = "10";
@@ -29,7 +29,7 @@ var_dump($a);
 echo "nilai\$b = '10' : ";
 var_dump($b);
 
-echo "\nOperator == (Sama dengan)\n";
+echo "\n---Operator == (Sama dengan)---\n";
 
 if ($a == $b) {
     echo "Nilai \$a = 10 sama dengan \$b = '10' (==)";
@@ -90,6 +90,10 @@ if ($result == -1) {
 } else {
     echo "\$a = 10 lebih besar dari \$c = 20 (<=>)";
 }
+
+echo "\n\n---Operator logika---\n\n";
+
+
 
 
 ?>
