@@ -113,4 +113,30 @@ var_dump(true xor false);  // true
 var_dump(true xor true);   // false
 var_dump(false xor false); // false
 
+echo "\n\n---Operator increment dan decrement---\n\n";
+
+echo "\n---Pre-Increment (++\$x)---\n"; //Menambah nilai variabel sebelum variabel digunakan.
+$x = 5;
+echo ++$x; // Output: 6 (nilai $x langsung ditambah 1 sebelum dicetak)
+echo "\n";
+echo $x;   // Output: 6 (nilai $x sudah berubah menjadi 6)
+
+echo "\n---Post-Increment (\$x++)---\n"; //Menambah nilai variabel setelah variabel digunakan.
+echo $x++; // Output: 5 (nilai $x dicetak dulu, baru ditambah 1)
+echo "\n";
+echo $x;   // Output: 6 (nilai $x sekarang sudah menjadi 6)
+
+echo "\n---Pre-Decrement (--\$x)---\n"; //Pre-Decrement (--$x)
+echo --$x; // Output: 4 (nilai $x langsung dikurangi 1 sebelum dicetak)
+echo "\n";
+echo $x;   // Output: 4 (nilai $x sudah berubah menjadi 4)
+
+echo "\n---Pre-Decrement (\$x--)---\n"; //Mengurangi nilai variabel setelah variabel digunakan.
+$x = 5;
+echo $x--; // Output: 5 (nilai $x dicetak dulu, baru dikurangi 1)
+echo "\n";
+echo $x;   // Output: 4 (nilai $x sekarang sudah menjadi 4)
+
+
+
 ?>
