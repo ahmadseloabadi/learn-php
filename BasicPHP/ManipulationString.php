@@ -16,4 +16,14 @@ $tofloat = (float)'1.5';
 var_dump($tofloat);
 
 
+$contoh = "contoh";
+
+echo "insitial string : ".$contoh. PHP_EOL;
+
+echo "mengakses karakter string pada index 0 : ". $contoh[0]. PHP_EOL;
+
+echo "ini $contoh dari implementasi variable parsing". PHP_EOL;
+
+echo "ini {$contoh}nya untuk penggunaan curly brance";
+
 ?>
