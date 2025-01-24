@@ -63,7 +63,6 @@ unset($remove);
 
 echo 'cek apakah variable $remove ada atau tidak : ';
 var_dump(isset($remove));
-// note : 
 echo "\n";
 echo 'cek variable $data_null bernilai null atau tidak: ';
 var_dump(isset($data_null));

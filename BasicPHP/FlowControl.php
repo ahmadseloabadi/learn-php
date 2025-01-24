@@ -61,5 +61,10 @@ switch ($hariIni['weekday']) {
 }
 echo "\n---ternary statement---\n";
 
+$result = ($nilai >= 80) ? "anda mendapatkan nilai lebih dari 80":"anda mendapatkan nilai dibawah dari 80"; 
+echo $result. PHP_EOL;
+
+echo "\n---null coelesing operator---\n";
+
 
 ?>
