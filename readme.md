@@ -86,8 +86,8 @@ To follow along with the tutorials, I am using:
 | ------------------------ | ----------- |
 | Installing PHP           | Completed   |
 | Writing first PHP script | Completed   |
-| Variables and data types | In Progress |
-| Functions                | Not Started |
+| Variables and data types | Completed   |
+| Functions                | In progress |
 | OOP                      | Not Started |
 | Database integration     | Not Started |
 
