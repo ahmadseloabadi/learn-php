@@ -79,4 +79,24 @@ echo $action2. PHP_EOL;
 
 echo "\n---for loop---\n";
 
+
+
+$counter =1; 
+
+for (;$counter <=10;){
+    echo "-for loop dengan kondisi : ke-".$counter.PHP_EOL;
+    $counter++;
+};
+
+for ($count=1;$count<=5;){
+    
+    echo "-for loop dengan init statement : ke-".$count.PHP_EOL;
+    $count++;
+};
+
+for ($cont=1;$cont<=3;$cont++){
+    
+    echo "-for loop dengan post increment : ke-".$cont.PHP_EOL;
+}
+
 ?>
