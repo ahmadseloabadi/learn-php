@@ -148,6 +148,11 @@ foreach ($buah as $item) {
     echo "Buah : $item". PHP_EOL;
 }
 
+// Menggunakan foreach untuk mencetak setiap elemen array
+foreach ($buah as $index => $item) {
+    echo "Buah ke-$index : $item". PHP_EOL;
+}
+
 // Array asosiatif
 $mahasiswa = [
     "nama" => "Budi",
