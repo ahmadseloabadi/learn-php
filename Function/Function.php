@@ -5,6 +5,6 @@ function sayHello()
     echo "hello everyone";
 }
 
-sayHello()
+sayHello();
 
 ?>
