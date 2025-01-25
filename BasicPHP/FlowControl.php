@@ -98,5 +98,17 @@ for ($cont=1;$cont<=3;$cont++){
     
     echo "-for loop dengan post increment : ke-".$cont.PHP_EOL;
 }
+for ($cont=10;$cont>=1;$cont--){
+    
+    echo "-for loop dengan post decrement : ke-".$cont.PHP_EOL;
+}
 
+echo "\n---while loop---\n";
+
+$jumlah =1; 
+
+while ($jumlah <=10){
+    echo "-while loop : ke-".$jumlah.PHP_EOL;
+    $jumlah++;
+};
 ?>
