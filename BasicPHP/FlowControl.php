@@ -122,4 +122,30 @@ do{
 // do: Blok kode di dalam do akan dijalankan terlebih dahulu, sebelum memeriksa kondisi.
 // while ($jum<=20): Kondisi diperiksa setelah blok kode dijalankan. Jika kondisi benar, perulangan berlanjut.
 
+echo "\n---break dan continue---\n";
+
+for ($i = 1; $i <= 10; $i++) {
+    if ($i == 6) {
+        echo "Loop berhenti di angka: $i". PHP_EOL;
+        break; // Menghentikan perulangan ketika $i bernilai 6
+    }
+    echo "Angka: $i". PHP_EOL;
+}
+
+for ($i = 1; $i <= 10; $i++) {
+    if ($i % 2 == 0) {
+        continue; // Melewati iterasi ketika $i adalah angka genap
+    }
+    echo "Angka ganjil: $i". PHP_EOL;
+}
+
+echo "\n---for each loop---\n";
+// Array sederhana
+$buah = ["Apel", "Jeruk", "Mangga", "Pisang"];
+
+// Menggunakan foreach untuk mencetak setiap elemen array
+foreach ($buah as $item) {
+    echo "Buah: $item". PHP_EOL;
+}
+
 ?>
