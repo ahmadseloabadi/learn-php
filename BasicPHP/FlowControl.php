@@ -157,7 +157,7 @@ $mahasiswa = [
 
 // Menggunakan foreach untuk mencetak key dan value
 foreach ($mahasiswa as $key => $value) {
-    echo ucfirst($key) . ": $value<br>";
+    echo ucfirst($key) . ": $value". PHP_EOL;
 }
 
 ?>
