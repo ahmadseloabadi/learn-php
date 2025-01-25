@@ -66,5 +66,17 @@ echo $result. PHP_EOL;
 
 echo "\n---null coelesing operator---\n";
 
+$data = [];
+$data2 = [
+    "action" => "ada",
+];
+
+$action = $data["action"] ?? "nothing";
+$action2 = $data2["action"] ?? "nothing";
+
+echo $action . PHP_EOL;
+echo $action2. PHP_EOL;
+
+echo "\n---for loop---\n";
 
 ?>
