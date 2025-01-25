@@ -114,3 +114,68 @@ If you want to learn PHP along with me, here’s how you can start:
 ## Acknowledgments
 
 Special thanks to **Programmer Zaman Now** for creating such high-quality and engaging tutorials. Their content is invaluable for anyone looking to learn PHP effectively.
+
+## Structure Folder
+
+project-name/
+├── basic-php/
+│ ├── variables.php
+│ ├── constants.php
+│ ├── operators.php
+│ ├── conditionals/
+│ │ ├── if-else.php
+│ │ ├── switch.php
+│ │ ├── ternary.php
+│ └── loops/
+│ ├── for-loop.php
+│ ├── while-loop.php
+│ ├── do-while-loop.php
+│ ├── foreach.php
+├── functions/
+│ ├── basic-functions.php
+│ ├── function-arguments.php
+│ ├── recursive-functions.php
+│ ├── anonymous-functions.php
+│ └── arrow-functions.php
+├── arrays/
+│ ├── indexed-array.php
+│ ├── associative-array.php
+│ ├── multidimensional-array.php
+│ ├── array-functions.php
+├── object-oriented/
+│ ├── classes-and-objects.php
+│ ├── inheritance.php
+│ ├── interfaces.php
+│ ├── traits.php
+│ ├── abstract-classes.php
+│ ├── constructor-and-destructor.php
+├── advanced-php/
+│ ├── sessions.php
+│ ├── cookies.php
+│ ├── file-handling.php
+│ ├── exceptions.php
+│ ├── namespaces.php
+│ ├── composer/
+│ │ └── autoloading.php
+├── database/
+│ ├── mysql-connection.php
+│ ├── insert-data.php
+│ ├── read-data.php
+│ ├── update-data.php
+│ ├── delete-data.php
+├── web-projects/
+│ ├── simple-crud/
+│ │ ├── index.php
+│ │ ├── create.php
+│ │ ├── read.php
+│ │ ├── update.php
+│ │ ├── delete.php
+│ └── form-handling/
+│ ├── login-form.php
+│ ├── registration-form.php
+│ ├── form-validation.php
+├── api/
+│ ├── basic-rest-api.php
+│ ├── api-authentication.php
+│ ├── fetch-data-with-curl.php
+└── README.md
