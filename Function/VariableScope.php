@@ -46,7 +46,7 @@ echo "\n";
 // Superglobals
 function contohSuperglobals() {
     // Mengakses variabel $GLOBALS, salah satu superglobals
-    echo "Nama server: " . $GLOBALS['SERVER_NAME'] . "\n";
+    echo "Nama variable: {$GLOBALS['globalVar']} dengan superglobals"  . "\n";
 }
 
 contohSuperglobals();
