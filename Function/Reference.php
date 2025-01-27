@@ -51,6 +51,8 @@ echo " get return Value reference from \$nilai= $ref\n";
 $ref = 20;  // Mengubah $ref akan mengubah $nilai
 
 echo "change Value \$nilai= $ref\n";  // Output: Value = 20
+$refAgain = &getValue();
+echo "Value after reference \$nilai= $refAgain\n"; // Output:
 # penjelasan kode diatas #
 // Fungsi getValue() mengembalikan reference ke variabel $nilai yang statis.
 // Ketika Anda mengubah $ref, yang merujuk ke $nilai, maka nilai $nilai juga berubah.
