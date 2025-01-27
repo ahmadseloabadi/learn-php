@@ -6,11 +6,4 @@ function sayHello()
 };
 
 sayHello();
-
-
-
-
-
-
-
 ?>
