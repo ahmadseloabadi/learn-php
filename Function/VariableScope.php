@@ -5,6 +5,10 @@ $globalVar = "Ini variabel global";
 function contohGlobal() {
     // Mengakses variabel global menggunakan keyword 'global'
     global $globalVar;
+    
+    //akan gagal mengakses variable global karena PHP akan menganggap $globalVar di dalam fungsi sebagai variabel baru 
+    // $globalVar; // Ini hanya mendeklarasikan variabel lokal kosong (error: undefined variable)
+
     echo "Mengakses di dalam fungsi: $globalVar\n";
 }
 
