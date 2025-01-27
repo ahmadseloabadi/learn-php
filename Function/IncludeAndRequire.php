@@ -4,18 +4,18 @@
 echo "### Contoh Penggunaan require dan include ###\n\n";
 
 // Menggunakan include untuk menyisipkan MyFunction.php
-echo "----Menggunakan include:\n";
-include 'lib/MyFunction.php';//contoh benar
-include 'MyFunction.php';//contoh salah
-echo "----Bagian ini tetap dijalankan meskipun include gagal.\n\n";
-echo sayHelloTo();
+// echo "----Menggunakan include:\n";
+// include 'lib/MyFunction.php';//contoh benar
+// include 'MyFunction.php';//contoh salah
+// echo "----Bagian ini tetap dijalankan meskipun include gagal.\n\n";
+// echo sayHelloTo();
 
 // Menggunakan require untuk menyisipkan MyFunction.php
-echo "---Menggunakan require:\n";
-require 'lib/MyFunction.php';//contoh benar
-require 'MyFunction.php';//contoh salah
-echo "----Bagian ini tetap dijalankan jika require berhasil.\n\n";
-echo sayHelloTo();
+// echo "---Menggunakan require:\n";
+// require 'lib/MyFunction.php';//contoh benar
+// require 'MyFunction.php';//contoh salah
+// echo "----Bagian ini tetap dijalankan jika require berhasil.\n\n";
+// echo sayHelloTo();
 
 ### penjelasan require dan include ###
 
@@ -31,7 +31,7 @@ echo sayHelloTo();
 
 // Contoh penggunaan require_once dan include_once
 
-echo "### Contoh Penggunaan require_once dan include_once ###\n\n";
+// echo "### Contoh Penggunaan require_once dan include_once ###\n\n";
 
 // Menggunakan include_once untuk menyisipkan MyFunction.php
 // echo "----Menggunakan include_once:\n";
@@ -62,5 +62,21 @@ echo "### Contoh Penggunaan require_once dan include_once ###\n\n";
 // require dan include selalu memuat file yang diinginkan, meskipun digunakan berulang kali.
 // Jika file yang sama diambil berulang kali, ini dapat menyebabkan masalah, seperti error redeclare function karena definisi fungsi yang duplikat.
 // require_once dan include_once di PHP berguna untuk memastikan file yang sama hanya dimuat sekali, sehingga mencegah error tersebut.
+
+## contoh kesalahan ##
+// include 'lib/MyFunction.php';
+// include 'lib/MyFunction.php';
+// echo sayHelloTo();
+// require 'lib/MyFunction.php';
+// require 'lib/MyFunction.php';
+// echo sayHelloTo();
+## contoh solusi ##
+// include_once 'lib/MyFunction.php';
+// include_once 'lib/MyFunction.php';
+// echo sayHelloTo();
+// require_once 'lib/MyFunction.php';
+// require_once 'lib/MyFunction.php';
+// echo sayHelloTo();
+
 
 ?>
