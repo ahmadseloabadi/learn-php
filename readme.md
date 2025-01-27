@@ -88,8 +88,8 @@ To follow along with the tutorials, I am using:
 | Writing first PHP script | Completed   |
 | Variables and data types | Completed   |
 | Control Structures       | Completed   |
-| Functions                | In progress |
-| OOP                      | Not Started |
+| Functions                | Completed   |
+| OOP                      | In progress |
 | Database integration     | Not Started |
 
 ---
