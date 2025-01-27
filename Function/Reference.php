@@ -16,21 +16,26 @@ echo "b = $b\n";  // Output: b = 20
 // Ketika Anda menggunakan $b = &$a, $b sekarang menjadi reference dari $a, yang berarti keduanya merujuk ke tempat yang sama di memori.
 // Ketika nilai $b diubah menjadi 20, nilai $a juga berubah, karena mereka merujuk ke data yang sama.
 
-echo "--Menggunakan Reference untuk Fungsi". PHP_EOL;
+echo "--Menggunakan Reference untuk Fungsi (pass reference)". PHP_EOL;
 // Anda juga dapat menggunakan reference pada parameter fungsi. Dengan menggunakan & pada parameter, Anda memungkinkan fungsi untuk memodifikasi variabel yang dikirim ke dalamnya, bukan salinan dari variabel tersebut.
-function addFive(&$number) {
+function addFive(int &$number,int $angka) {
     $number += 5;
+    $angka +=5;
 }
 
+
+$varVal = 10;
 $value = 10;
 echo " inisialisasi \$Value = $value\n";  // Output: Value = 10
-addFive($value);
+echo " inisialisasi \$varVal = $varVal\n";  // Output: Value = 10
+addFive($value,$varVal);
 echo "\$Value = $value\n";  // Output: Value = 15
+echo "\$varVal = $varVal\n";  // Output: Value = 10
 # penjelasan kode diatas #
 // Parameter &$number berarti bahwa variabel yang dikirimkan ke fungsi addFive() akan dirujuk langsung oleh fungsi tersebut.
 // Ketika fungsi addFive() menambah 5 ke $number, perubahan tersebut terjadi pada variabel $value yang dikirim ke fungsi, bukan salinan dari $value.
 
-echo "--Menggunakan Reference untuk Mengembalikan Nilai dari Fungsi". PHP_EOL;
+echo "--Menggunakan Reference untuk Mengembalikan Nilai dari Fungsi(returning reference)". PHP_EOL; //tidak disarankan karna membingungkan
 // PHP juga memungkinkan Anda untuk mengembalikan nilai by reference dari fungsi. Artinya, fungsi tersebut mengembalikan referensi ke variabel yang ada, bukan salinan nilai.
 
 function &getValue() {
