@@ -7,5 +7,7 @@ function helloBro(string $name, callable $filter)
     echo "Hello $finalname". PHP_EOL;
 };
 
-
+helloBro("callback x anonymous function", function ($name) { return strtoupper($name);});
+helloBro("CALLBACK X ARROW FUNCTION",fn($name) => strtolower($name));
+helloBro("callback x variable function","strtoupper");
 ?>
