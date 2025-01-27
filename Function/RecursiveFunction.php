@@ -60,5 +60,5 @@ loop(25);
 // dan recurive function sendiri akan memanggil dirinya sendiri dan akan menumpuk terus-menerus,yang membuat terlalu banyak memakan memori pada PHP 
 
 // berikut contoh error memory overflow pada penerapan recursive function
-loop(3000000);
+// loop(3000000); //silahakan dicoba dan selamat menunggu error :) 
 ?>
