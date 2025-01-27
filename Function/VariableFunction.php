@@ -1,6 +1,11 @@
 <?php 
 
 echo "--variable function---". PHP_EOL;
+function penjumlahan($x=3,$y=5) // parameter dengan nilia default
+{   
+    $hasil= $x+$y;
+    echo "hasil penjumlahan dari $x dan $y : $hasil". PHP_EOL;
+};
 $variablefunction = "penjumlahan";
 $variablefunction(6,7);
 
