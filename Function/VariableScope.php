@@ -45,9 +45,15 @@ echo "\n";
 
 // Superglobals
 function contohSuperglobals() {
-    // Mengakses variabel $_SERVER, salah satu superglobals
-    echo "Nama server: " . $_SERVER['SERVER_NAME'] . "\n";
+    // Mengakses variabel $GLOBALS, salah satu superglobals
+    echo "Nama server: " . $GLOBALS['SERVER_NAME'] . "\n";
 }
 
 contohSuperglobals();
+
+### penjelasan variable scope ###
+// Global Scope: Variabel yang didefinisikan di luar fungsi atau class, hanya dapat diakses di luar fungsi atau class kecuali menggunakan kata kunci global.
+// Local Scope: Variabel yang didefinisikan di dalam fungsi hanya dapat diakses di dalam fungsi tersebut.
+// Static Scope: Variabel yang dideklarasikan sebagai static di dalam fungsi akan mempertahankan nilainya antar pemanggilan fungsi.
+// Superglobals: Variabel bawaan PHP yang memiliki cakupan global, seperti $_GET, $_POST, $_SESSION,$GLOBALS, dll.
 ?>
